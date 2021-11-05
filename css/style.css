@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* color pallete */
+:root {
+    --bg-color: #1d1f21;
+    --primary-color: #2bbc8a;
+    --secondary-color: #2ba6bc;
+    --light-text-color: #c9cacc;
+    --dark-text-color: #666666;
+    --code-bg-color: black;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--light-text-color);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: 'Red Hat Mono', monospace;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* utility classes */
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-dark {
+    color: var(--dark-text-color);
+}
+
+.divider {
+    padding-top: 1rem;
+    border-top: 1px solid var(--dark-text-color);
+}
+
+.underline {
+    border-bottom: 1px solid var(--light-text-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+code {
+    background: var(--code-bg-color);
+    padding: 0 5px;
+    line-height: 22px;
+    border-radius: 2px;
+}
+
+/* life so far section */
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.col-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.col-content {
+    padding: 1rem;
+    list-style: square;
+}
+
+.col-content li:hover {
+    color: var(--secondary-color);
+}
+
+
+/* accolade section */
+.accolades-list {
+    padding: 0;
+    word-wrap: break-word;
+}
+
+.accolades-list li {
+    color: var(--dark-text-color);
+}
+
+.accolades-list li span a {
+    color: var(--light-text-color);
+    border-bottom: 1px solid var(--light-text-color);
+}
+
+.accolades-list li span a:hover {
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.accolades-btn {
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.accolades-btn:hover {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+/* project section */
+.project {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.project-img {
+    padding: 1.25em 1.25em 0 0;
+}
+
+img {
+    width: 250px;
+    height: 150px;
+    border: 2px solid var(--dark-text-color);
+}
+
+
+
+.project-tags {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-tags span:hover {
+    color: var(--primary-color);
+}
+
+.project-link {
+    color: var(--light-text-color);
+}
+
+
+/* footer section */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--dark-text-color);
+    font-size: 12px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    color: var(--dark-text-color);
+}
+
+footer ul a {
+    color: var(--dark-text-color);
+}

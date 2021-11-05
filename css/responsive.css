@@ -1,0 +1,36 @@
+/* 
+xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px,
+xxl: 1400px 
+*/
+
+@media screen and (max-width: 576px) {
+    
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .col-content {
+        list-style: square;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .project {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* life so far section */
